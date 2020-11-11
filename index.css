@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divider{
+    display: flex;
+    width: 300px;
+    background-color: red;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.divider > div{
+    padding: 10px;
+}
