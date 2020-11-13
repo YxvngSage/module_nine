@@ -2,12 +2,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge 1</title>
+    <title>Challenge 5</title>
     <link rel="stylesheet" href="index.css" >
 </head>
 <body>
-    <button>Generate cat</button>
-    <div class="divider"></div>
-    <script src='index.js'></script>
+    <h1 id='shketit'>Let's Play!</h1>
+    <div class='background'>
+        <div class='player-bot-container'>
+            <div class='player'>
+               <h1>Eh Doh Kue: <span>0</span></h1>
+                <div class='player-images-container'></div>
+            </div>
+            <div class='bot'>
+                <h1>Thalaytoo Roa: <span>0</span></h1>
+                <div class='bot-images-container'></div>
+            </div>
+        </div>
+
+        <div class='buttons-container'>
+            <button id='hit'>Hit</button>
+            <button id='stand'>Stand</button>
+            <button id='deal'>Deal</button>
+        </div>
+
+        <div class='scoreboard-container'>
+            <table>
+                <th>Win</th>
+                <th>Loss</th>
+                <th>Tie</th>
+                <tr>
+                    <td id='win'>0</td>
+                    <td id='loss'>0</td>
+                    <td id='tie'>0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

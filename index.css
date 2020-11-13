@@ -2,17 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
+    font-family: Helvetica;
 }
 
-.divider{
+.background{
+    background-image: url(blackjack_assets/images/tableBackground.png);
+    height: 932px;
+    color: #ffffff;
     display: flex;
-    width: 300px;
-    background-color: red;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;;
 }
 
-.divider > div{
+img{
+    height: 175px;
+    padding: 5px;
+}
+
+.player-bot-container{
+    width: 100%;
+    height: 68%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-images-container,.bot-images-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.player,.bot{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.player{
+    border: 0.25rem solid #ffffff;
+}
+
+.bot{
+    border: 0.25rem solid #ffffff;
+}
+
+table{
+    color: #ffffff;
+    border-collapse: collapse;
+    border: 1px solid white;
+
+}
+
+tr,th,td{
     padding: 10px;
+    border: 1px solid white;
 }
